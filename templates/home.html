@@ -7,8 +7,9 @@
 <body>
 
 {% if user.is_authenticated %}
-  Hello World
-  <p><a href="{% url 'logout' %}">logout</a></p>
+    Hello World
+    <p><a href="{% url 'add' %}">add</a></p>
+    <p><a href="{% url 'logout' %}">logout</a></p>
 {% endif %}
 </body>
 </html>
