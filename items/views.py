@@ -13,9 +13,11 @@ def add(request):
         context = {'form': ItemForm}
         return render(request, 'items/add.html', context)
     elif request.method == 'POST':
-        Item.objects.create(name=request.POST['name'],
-                            photo=request.POST['photo'],
-                            created_by=request.user)
+        form = ItemForm(request.POST, request.FILES)
+        if form.is_valid():
+            new_item = form.save(commit=False)
+            new_item.created_by = request.user
+            new_item.save()
         return redirect('home')
 
 
