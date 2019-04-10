@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    {#    <!-- Compiled and minified CSS -->#}
+    {#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">#}
+</head>
+<body>
+<h1>Castle Test</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username"/>
+    <br>
+    <label for="pwd">Password:</label>
+    <input type="password" name="pwd"/>
+    <br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
