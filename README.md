@@ -4,7 +4,7 @@ clone repo
 
 `git clone https://github.com/PyaePhyoKhant/castle-test.git`
 
-then cd to root directory
+then `cd` to root directory
 
 `cd castle-test`
 
@@ -12,6 +12,10 @@ then cd to root directory
 create virtual environment and install requirements (this may take a few seconds)
 
 `pipenv install`
+
+if you encounter `pipenv: command not found` error, install `pipenv` first
+
+`pip install pipenv`
 
 start virtual environment
 
