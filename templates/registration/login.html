@@ -11,12 +11,7 @@
 <h1>Castle Test</h1>
 <form method="post">
     {% csrf_token %}
-    <label for="username">Username:</label>
-    <input type="text" name="username"/>
-    <br>
-    <label for="pwd">Password:</label>
-    <input type="password" name="pwd"/>
-    <br>
+    {{ form }}
     <input type="submit" value="Login">
 </form>
 </body>
